@@ -5,33 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="#"></a>
+        <a href="./index.html"></a>
         <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
         <ul>
-          <li><a href="#" target="_blank">Наші традиції</a></li>
-          <li><a href="#" target="_blank">Шеф-кухарі</a></li>
-          <li><a href="#" target="_blank">Формати</a></li>
-          <li><a href="#" target="_blank">Контакти</a></li>
+          <li>
+            <a class="link" href="#format-tradicii" target="_blank"
+              >Наші традиції</a
+            >
+          </li>
+          <li>
+            <a class="link" href="#nachi-heff-kuhari" target="_blank"
+              >Шеф-кухарі</a
+            >
+          </li>
+          <li>
+            <a class="link" href="#formati" target="_blank">Формати</a>
+          </li>
+          <li>
+            <a class="link" href="#kontakti" target="_blank">Контакти</a>
+          </li>
         </ul>
       </nav>
       <!--button-->
-      <button type="button">Замовити дзвінок</button>
+      <button class="button" type="button">Замовити дзвінок</button>
     </header>
+
     <main>
       <section>
-        <h1>Сучасна пекарня</h1>
+        <h1 class="hero-title"><span class="accent">Сучасна</span> пекарня</h1>
       </section>
-      <section>
-        <ul>
+      <section id="format-tradicii">
+        <ul class="adventegest-list">
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
         </ul>
-        <h2>Новий формат традицій</h2>
+        <h2 class="section-title">Новий формат традицій</h2>
         <p>
           <span>shop bakery —</span> це пекарня, яка взяла все найкраще, і
           зберегла смак традиційної випічки та натуральність інгредієнтів.
@@ -43,8 +57,10 @@
         </p>
         <img src="./images/mask-group.jpg" alt="Фото mask-group" />
       </section>
-      <section>
-        <h2>Наші найкращі шеф -кухарі</h2>
+      <section id="nachi-heff-kuhari">
+        <h2 class="section-title">
+          Наші найкращі <span class="accent">шеф -кухарі</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -70,8 +86,8 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Формати</h2>
+      <section id="formati">
+        <h2 class="section-title">Формати</h2>
         <ul>
           <li>
             <article>
@@ -91,7 +107,15 @@
         </ul>
       </section>
       <section>
-        <h2>Приєднуйся до мережі пекарень</h2>
+        <h2 class="section-title">Приєднуйся до мережі пекарень</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20282.80299957913!2d30.200602699999997!3d50.5462539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b31c707a8aa4f%3A0xda08f7cc9782970e!2sNOVUS!5e0!3m2!1suk!2sua!4v1718477006688!5m2!1suk!2sua"
+          width="603"
+          height="595"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
     <footer>
@@ -99,13 +123,13 @@
         <a href="#"></a>
         <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
         <ul>
-          <li><a href="#" target="_blank">Наші традиції</a></li>
-          <li><a href="#" target="_blank">Шеф-кухарі</a></li>
-          <li><a href="#" target="_blank">Формати</a></li>
-          <li><a href="#" target="_blank">Контакти</a></li>
+          <li><a href="#format-tradicii">Наші традиції</a></li>
+          <li><a href="#nachi-heff-kuhari">Шеф-кухарі</a></li>
+          <li><a href="#formati">Формати</a></li>
+          <li><a href="#kontakti">Контакти</a></li>
         </ul>
       </nav>
-      <address>
+      <address id="kontakti">
         <ul>
           <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
           <li>
@@ -126,7 +150,7 @@
           </li>
         </ul>
         <a href="#" target="_blank">Політика конфіденційності</a>
-        <p>© 2022 Дані захищені</p>
+        <p>&copy; 2022 Дані захищені</p>
       </address>
     </footer>
   </body>
