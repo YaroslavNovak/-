@@ -126,6 +126,7 @@ ul {
 
 /*button*/
 .button {
+  font-family: Roboto, sans-serif;
   padding: 16px 32px;
   margin-bottom: 14px;
   color: var(--color-white);
@@ -141,6 +142,7 @@ ul {
 }
 
 .button-maps {
+  font-family: Roboto, sans-serif;
   padding: 16px 32px;
   margin-bottom: 8px;
   margin-left: 70px;
@@ -270,7 +272,7 @@ ul {
 /*hero*/
 .hero-section {
   padding: 123px 0 0 205px;
-  background-image: url('../images/fon.png');
+  background-image: url('../images/Hero-title.jpg');
   background-repeat: no-repeat;
   background-position: 65% 50%;
   background-size: contain;
@@ -289,7 +291,9 @@ ul {
 
 .hero-title .accent {
   color: var(--color-primary-light);
-  font-size: 128px;
+  font-family: Play, sans-serif;
+  font-size: 140px;
+  font-weight: 700;
 }
 
 .section-title {
@@ -305,6 +309,7 @@ ul {
 }
 
 .accent-brend {
+  font-family: Play, sans-serif;
   font-weight: bold;
 }
 
@@ -351,6 +356,8 @@ ul {
 
 .about-clinic-title {
   margin-bottom: 40px;
+  font-family: Play, sans-serif;
+  font-weight: 700;
 }
 
 .about-clinic-text:last-child {
