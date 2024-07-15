@@ -51,6 +51,12 @@
   --color-gray: #4A4A4A;
 }
 
+/*Base*/
+*,
+*::before *::after {
+  box-sizing: border-box;
+}
+
 /*body*/
 body {
   color: var(--color-primary-dark);
@@ -68,6 +74,10 @@ h4,
 h5,
 p {
   margin-top: 0;
+}
+
+.a {
+  display: inline-block;
 }
 
 address {
@@ -101,14 +111,17 @@ ul {
 /*container*/
 .container {
   width: 100%;
-  max-width: 1264px;
+  max-width: 1260px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
 .maps {
   width: 100%;
-  max-width: 1059px;
+  max-width: 605px;
+  height: 480px;
+  border-radius: 32px;
+  border: none;
 }
 
 /*button*/
@@ -130,9 +143,9 @@ ul {
 .button-maps {
   padding: 16px 32px;
   margin-bottom: 8px;
-  margin-left: 0px;
+  margin-left: 70px;
   color: var(--color-white);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   background-color: var(--color-primary-light);
   border: 2px solid var(--color-primary-light);
@@ -144,7 +157,7 @@ ul {
 }
 
 .coment-button {
-  margin: 0;
+  margin: 0 0 0 20px;
   font-size: 12px;
   font-weight: 400;
   color: var(--color-gray);
@@ -169,6 +182,7 @@ ul {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
+  margin-top: 0;
 }
 
 /*link*/
@@ -218,8 +232,12 @@ ul {
 /*Header*/
 .header-container {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   gap: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 1260px;
+  height: 106px;
 }
 
 .header-nav {
@@ -234,18 +252,29 @@ ul {
   align-items: center;
   gap: 64px;
   flex-grow: 1;
-  justify-content: center;
+  justify-content: end;
+  margin-right: 0;
 }
 
 .header-menu-icons {
   display: flex;
   align-items: center;
-  gap: 32px;
+  justify-content: flex-start;
+  flex-grow: 1;
+  gap: 35px;
+  width: 32px;
+  height: 32px;
+  margin-left: 240px;
 }
 
 /*hero*/
 .hero-section {
   padding: 123px 0 0 205px;
+  background-image: url('../images/fon.png');
+  background-repeat: no-repeat;
+  background-position: 65% 50%;
+  background-size: contain;
+
 }
 
 .hero-title {
@@ -330,7 +359,8 @@ ul {
 
 /*section-reviews*/
 .section-reviews {
-  padding-top: 176px;
+  padding-top: 0;
+
 }
 
 .reviews-container {
@@ -362,7 +392,7 @@ ul {
 }
 
 .reviews-container-menu {
-  background-color: aqua;
+  background-color: var(--color-white);
   border: 1px;
   border-radius: 32px;
   width: 316px;
@@ -386,21 +416,41 @@ ul {
 .services-container {
   display: flex;
   align-items: center;
-  flex-grow: 1;
-  gap: 40px;
+  gap: 32px;
 }
 
 .services-container-image {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  flex-grow: 1;
   justify-content: center;
 }
 
 .formats-item {
   flex-basis: calc((100%-16px)/3);
 }
+
+/*section-button*/
+.carousel-butto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: var(--color-gray);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-gray);
+  cursor: pointer;
+}
+
+.carousel-butto:hover {
+  background-color: var(--color-primary-light);
+  fill: var(--color-white);
+}
+
 
 /*our-specialists*/
 .section-specialists {
@@ -412,10 +462,37 @@ ul {
   justify-content: flex-start;
   width: 423px;
   height: 481px;
+  background-image: url('../images/background-figura.png');
+  margin: 0;
+}
+
+.entry-specialists {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  text-align: left;
+  width: 244px;
+  color: var(--color-white);
+  line-height: 1.15;
+  gap: 18px;
+}
+
+.border-entry {
+  border: 2px solid var(--color-gray);
+  border-radius: 32px;
+  width: 313px;
+  margin-bottom: 18px;
+  margin-left: 20px;
+  height: 52px;
+  padding: 3px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .our-specialists {
-  color: #ffffff;
+  color: var(--color-white);
   text-align: center;
   font-size: 22px;
   font-weight: 600;
@@ -434,14 +511,17 @@ ul {
 
 /*bottom-nav*/
 .bottom-nav {
-  background: var(--color-primary-dark);
+  background-color: var(--color-primary-dark);
+  background-image: url(../images/pexels-photo.png), url(../images/background-figura.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
 }
 
 /*footer*/
 .footer-nav-and-adress {
   display: flex;
   flex-direction: column;
-
 }
 
 .nav-and-adress {
@@ -464,7 +544,15 @@ ul {
   margin-top: 56px;
 }
 
-.icons-adress {
+.adress-social {
+  fill: var(--color-white);
+}
+
+.adress-social:hover {
+  fill: var(--color-primary-light);
+}
+
+.address-icon {
   display: flex;
   flex-direction: row;
   margin-top: 16px;
@@ -476,4 +564,12 @@ ul {
   margin-top: 56px;
   width: 205px;
   padding-top: 16px;
+}
+
+/*fon*/
+.fon-clinic-and-reviews {
+  background-image: url(' ../images/fon2.png');
+  background-repeat: no-repeat;
+  background-position: center 220px;
+  background-size: 100% auto;
 }
