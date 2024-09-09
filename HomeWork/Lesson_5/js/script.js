@@ -1,11 +1,52 @@
 //--1--
 //1) написати об*єкт студента який буде виводити ім*я, спеціальнісь, середній
 //бал і кількість пропущених занять
-
 //2) написати метод який буде виводити цю інформацію
+
+/*function user() {
+  console.log("Student", this);
+}
+
+user();
+
+const student = {
+  name: "Yaroslav",
+  specialty: "teacher",
+  avengar_bal: 85,
+  missed: 5,
+  seyUser: user,
+};
+
+student.seyUser();*/
 
 //3) написати три варіанти студентів
 
+function list() {
+  console.log(this);
+}
+
+const student = {
+  name: "Yaroslav",
+  specialty: "teacher",
+  avengar_bal: 85,
+  missed: 5,
+  list: list,
+  sayListWindow: list.bind(window),
+  info: function () {
+    console.log("Name is ${this.name}");
+    console.log("Specialty is ${this.specialty}");
+    console.log("Average mark ${this.avengar_bal}");
+    console.log("The number of missed classes ${this.missed}");
+  },
+};
+
+const student1 = {
+  name: "Natalya",
+  specialty: "teacher",
+  avengar_bal: 90,
+  missed: 3,
+};
+student.info.bind(student1)();
 //4) прикріпити знначення за допомогою call apply bind
 
 //--2--
