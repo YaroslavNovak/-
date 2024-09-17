@@ -102,33 +102,14 @@ student.seyUser();*/
 //2) cherry 58, 1,3
 
 //3) jrange 89. 3,4
-
+//-------
 // const products = [
 //   { name: "banana", price: 30, quantity: 4.5 },
 //   { name: "cherry", price: 58, quantity: 1.3 },
 //   { name: "jrange", price: 89, quantity: 3.4 },
 // ];
+// let nameNew = products.map(
+//   (item) => item.name + ": " + item.price * item.quantity
+// );
 
-// function calculateTotalPrice(productName) {
-//   const product = products.find((p) => p.name == productName);
-//   return product.price * product.quantity;
-// }
-
-// console.log(calculateTotalPrice());
-const products = [
-  { name: "Radar", price: 1300, quantity: 4 },
-  { name: "Scanner", price: 2700, quantity: 3 },
-  { name: "Droid", price: 400, quantity: 7 },
-  { name: "Grip", price: 1200, quantity: 9 },
-];
-
-function calculateTotalPrice(productName) {
-  for (const product of products) {
-    let totalPrice = product.price * product.quantity;
-    if (productName === product.name) {
-      return totalPrice;
-    }
-  }
-  return 0;
-}
-console.log(calculateTotalPrice());
+// console.log(nameNew);
