@@ -1,0 +1,42 @@
+/*Base*/
+ul {
+    list-style-type: none;
+}
+/*Button*/
+.button {
+    color: rgba(250, 244, 234, 1);
+    background-color: rgba(129, 155, 87, 1);
+    border: 2px solid rgba(129, 155, 87, 1);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button:hover{
+    color:rgba(129, 155, 87, 1);
+    background-color: transparent;
+}
+/*Link*/
+.link {
+    color: rgba(250, 244, 234, 1);
+}
+
+.link:hover {
+    color: rgba(129, 155, 87, 1);
+}
+/*Hero sections*/
+.hero-title {
+    color: rgba(250, 244, 234, 1);
+}
+
+.hero-title .accent {
+    color: rgba(129, 155, 87, 1);
+}
+/*Advantages section*/
+.advantages-list {
+    color: rgba(250, 244, 234, 1);
+    background-color: rgba(129, 155, 87, 1);
+}
+
+.section-title {
+    color: rgba(49, 38, 26, 1);
+}
