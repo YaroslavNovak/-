@@ -9,3 +9,4 @@
 [JS 4](https://yaroslavnovak.github.io/-/HomeWork/Lesson_5/js/script.js)<br>
 [JS 5](https://yaroslavnovak.github.io/-/HomeWork/Lesson_6/js/script.js)<br>
 [JS 6](https://yaroslavnovak.github.io/-/HomeWork/Lesson_7/js/script.js)<br>
+[JS 7](https://yaroslavnovak.github.io/-/HomeWork/Lesson_8/js/script.js)<br>
