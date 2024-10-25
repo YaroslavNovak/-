@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js_module_1</title>
+  </head>
+
+  <body>
+    <h1>Js_module_9</h1>
+    <!-- 1 -->
+    <!-- <input type="button" id="hider" value="Натисніть, щоб текст зник" />
+    <div id="text">Текст</div>
+    <script>
+      document.getElementById("hider").onclick = function () {
+      document.getElementById("text").hidden = true;
+      };
+    </script> -->
+    <!-- 2 -->
+    <!-- <input type="button" onclick="this.hidden=true" value="Сховати" /> -->
+    <!-- 3 -->
+    <!-- <ul class="tree" id="tree">
+      <li>
+        Пори року
+        <ul>
+          <li>
+            Зима
+            <ul>
+              <li>Грудень</li>
+              <li>Січень</li>
+              <li>Лютий</li>
+            </ul>
+          </li>
+          <li>
+            Весна
+            <ul>
+              <li>Березень</li>
+              <li>Квітень</li>
+              <li>Травень</li>
+            </ul>
+          </li>
+          <li>
+            Літо
+            <ul>
+              <li>Червень</li>
+              <li>Липень</li>
+              <li>Серпень</li>
+            </ul>
+          </li>
+          <li>
+            Осінь
+            <ul>
+              <li>Вересень</li>
+              <li>Жовтень</li>
+              <li>Листопад</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <script>
+      for (let li of tree.querySelectorAll("li")) {
+        let span = document.createElement("span");
+        li.prepend(span);
+        span.append(span.nextSibling); // поміщаємо текстовий вузол у span
+      }
+
+      // ловимо кліки на всьому дереві
+      tree.onclick = function (event) {
+        if (event.target.tagName != "SPAN") {
+          return;
+        }
+
+        let childrenContainer = event.target.parentNode.querySelector("ul");
+        if (!childrenContainer) return; // дітей немає
+
+        childrenContainer.hidden = !childrenContainer.hidden;
+      };
+    </script> -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
