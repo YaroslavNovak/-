@@ -1,0 +1,37 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/manrope-v15-cyrillic_cyrillic-ext_greek_latin_latin-ext_vietnamese-regular.woff2') format('woff2'),
+        url('../fonts/manrope-v15-cyrillic_cyrillic-ext_greek_latin_latin-ext_vietnamese-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/manrope-v15-cyrillic_cyrillic-ext_greek_latin_latin-ext_vietnamese-500.woff2') format('woff2'),
+        url('../fonts/manrope-v15-cyrillic_cyrillic-ext_greek_latin_latin-ext_vietnamese-500.ttf') format('truetype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/manrope-v15-cyrillic_cyrillic-ext_greek_latin_latin-ext_vietnamese-600.woff2') format('woff2'),
+        url('../fonts/manrope-v15-cyrillic_cyrillic-ext_greek_latin_latin-ext_vietnamese-600.ttf') format('truetype');
+}
+
+/*Base*/
+body {
+    background-color: #0A0A11;
+    color: #F3F3F3;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+
+}
