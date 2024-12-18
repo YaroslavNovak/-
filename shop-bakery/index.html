@@ -12,20 +12,23 @@
   <body>
     <header>
       <div class="container">
-        <a href="./index.html">
-          <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
-        </a>
-        <nav>
-          <ul>
-            <li>
-              <a class="link" href="#traditions-section">Наші традиції</a>
-            </li>
-            <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
-            <li><a class="link" href="#formats-section">Формати</a></li>
-            <li><a class="link" href="#contacts-section">Контакти</a></li>
-          </ul>
-        </nav>
-        <button class="button" type="button">Замовити дзвінок</button>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="./index.html">
+              <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+            </a>
+            <ul class="header-menu">
+              <li>
+                <a class="link" href="#traditions-section">Наші традиції</a>
+              </li>
+              <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+              <li><a class="link" href="#formats-section">Формати</a></li>
+              <li><a class="link" href="#contacts-section">Контакти</a></li>
+            </ul>
+          </nav>
+
+          <button class="button" type="button">Замовити дзвінок</button>
+        </div>
       </div>
     </header>
     <main>
@@ -39,7 +42,7 @@
         </div>
       </section>
       <!-- advantages-list -->
-      <section>
+      <section class="advantages-section">
         <div class="container">
           <h2 class="visualli-hiden">Список переваг</h2>
           <ul class="advantages-list">
@@ -52,21 +55,27 @@
       <!--A new format of traditions-->
       <section class="traditions-section section" id="traditions-section">
         <div class="container">
-          <h2 class="traditions-title section-title">Новий формат традицій</h2>
-          <p class="traditions-text">
-            <span class="brend uppercase">shop bakery</span> — це пекарня, яка
-            взяла все найкраще, і зберегла смак традиційної випічки та
-            натуральність інгредієнтів.
-          </p>
-          <p class="traditions-text">
-            Ми працюємо як найвідоміші мережі—
-            <span class="brend">5 хвилин і замовлення готове.</span> А ще у
-            наших пекарень стильний дизайн та висока якість обслуговування!
-          </p>
-          <img
-            src="./images/bake-man.jpg"
-            alt="Пекар дивиться на батони та посміхається"
-          />
+          <div class="traditions-container">
+            <div class="tradition-content">
+              <h2 class="traditions-title section-title">
+                Новий формат традицій
+              </h2>
+              <p class="traditions-text">
+                <span class="brend uppercase">shop bakery</span> — це пекарня,
+                яка взяла все найкраще, і зберегла смак традиційної випічки та
+                натуральність інгредієнтів.
+              </p>
+              <p class="traditions-text limited">
+                Ми працюємо як найвідоміші мережі—
+                <span class="brend">5 хвилин і замовлення готове.</span> А ще у
+                наших пекарень стильний дизайн та висока якість обслуговування!
+              </p>
+            </div>
+            <img
+              src="./images/bake-man.jpg"
+              alt="Пекар дивиться на батони та посміхається"
+            />
+          </div>
         </div>
       </section>
       <!--Our best chefs are cooks-->
@@ -108,7 +117,7 @@
         </div>
       </section>
       <!--Formats-->
-      <section class="section" id="formats-section">
+      <section class="formats-section section" id="formats-section">
         <div class="container">
           <h2 class="formats-title section-title">Формати</h2>
           <ul>
